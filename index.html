@@ -195,7 +195,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2021-04-07 10:51:03 / 修改时间：11:47:40" itemprop="dateCreated datePublished" datetime="2021-04-07T10:51:03+08:00">2021-04-07</time>
+              <time title="创建时间：2021-04-07 10:51:03 / 修改时间：13:39:44" itemprop="dateCreated datePublished" datetime="2021-04-07T10:51:03+08:00">2021-04-07</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -239,29 +239,15 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h4 id="1-View层级关系"><a href="#1-View层级关系" class="headerlink" title="1 View层级关系"></a>1 View层级关系</h4><h4 id="2-坐标系"><a href="#2-坐标系" class="headerlink" title="2 坐标系"></a>2 坐标系</h4><h5 id="2-1-Android坐标系"><a href="#2-1-Android坐标系" class="headerlink" title="2.1 Android坐标系"></a>2.1 Android坐标系</h5><h5 id="2-2-视图坐标系"><a href="#2-2-视图坐标系" class="headerlink" title="2.2 视图坐标系"></a>2.2 视图坐标系</h5><h6 id="2-2-1-View自身宽高"><a href="#2-2-1-View自身宽高" class="headerlink" title="2.2.1 View自身宽高"></a>2.2.1 View自身宽高</h6><p>方法说明：</p>
-<ul>
-<li><code>getWidth()</code> 获取View自身宽度</li>
-<li><code>getHeight()</code> 获取View自身高度<br>示例代码：<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">mTvView.post(() -&gt; &#123;</span><br><span class="line">            Log.d(TAG, <span class="string">&quot;View getWidth: &quot;</span> + mTvView.getWidth();</span><br><span class="line">            Log.d(TAG, <span class="string">&quot;View getHeight: &quot;</span> + mTvView.getHeigh();</span><br><span class="line">        &#125;);</span><br><span class="line"><span class="comment">//打印结果</span></span><br><span class="line"><span class="number">2021</span>-<span class="number">04</span>-<span class="number">07</span> <span class="number">11</span>:<span class="number">06</span>:<span class="number">49.775</span> <span class="number">30821</span>-<span class="number">30821</span>/com.exciter.view D/View01Activity: View getWidth: <span class="number">600</span></span><br><span class="line"><span class="number">2021</span>-<span class="number">04</span>-<span class="number">07</span> <span class="number">11</span>:<span class="number">06</span>:<span class="number">49.775</span> <span class="number">30821</span>-<span class="number">30821</span>/com.exciter.view D/View01Activity: View getHeight: <span class="number">600</span></span><br></pre></td></tr></table></figure>
-<h6 id="2-2-2-View自身坐标"><a href="#2-2-2-View自身坐标" class="headerlink" title="2.2.2 View自身坐标"></a>2.2.2 View自身坐标</h6>方法说明：</li>
-<li><code>getLeft()</code> View自身左边到父布局左边的距离</li>
-<li><code>getTop()</code> View自身顶部到父布局顶部的距离</li>
-<li><code>getRight()</code> View自身右边到父布局右边的距离</li>
-<li><code>getBottom()</code> View自身底部到父布局底部的距离<br>
-示例代码：
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"> mTvView.post(() -&gt; &#123;</span><br><span class="line">            Log.d(TAG, <span class="string">&quot;View getLeft: &quot;</span> + mTvView.getLeft());</span><br><span class="line">            Log.d(TAG, <span class="string">&quot;View getTop: &quot;</span> + mTvView.getTop());</span><br><span class="line">            Log.d(TAG, <span class="string">&quot;View getRight: &quot;</span> + mTvView.getRight());</span><br><span class="line">            Log.d(TAG, <span class="string">&quot;View getBottom: &quot;</span> + mTvView.getBottom());</span><br><span class="line">        &#125;);</span><br><span class="line"><span class="comment">//打印结果</span></span><br><span class="line"><span class="number">2021</span>-<span class="number">04</span>-<span class="number">07</span> <span class="number">11</span>:<span class="number">06</span>:<span class="number">49.775</span> <span class="number">30821</span>-<span class="number">30821</span>/com.exciter.view D/View01Activity: View getLeft: <span class="number">150</span></span><br><span class="line"><span class="number">2021</span>-<span class="number">04</span>-<span class="number">07</span> <span class="number">11</span>:<span class="number">06</span>:<span class="number">49.775</span> <span class="number">30821</span>-<span class="number">30821</span>/com.exciter.view D/View01Activity: View getTop: <span class="number">300</span></span><br><span class="line"><span class="number">2021</span>-<span class="number">04</span>-<span class="number">07</span> <span class="number">11</span>:<span class="number">06</span>:<span class="number">49.775</span> <span class="number">30821</span>-<span class="number">30821</span>/com.exciter.view D/View01Activity: View getRight: <span class="number">750</span></span><br><span class="line"><span class="number">2021</span>-<span class="number">04</span>-<span class="number">07</span> <span class="number">11</span>:<span class="number">06</span>:<span class="number">49.775</span> <span class="number">30821</span>-<span class="number">30821</span>/com.exciter.view D/View01Activity: View getBottom: <span class="number">900</span></span><br></pre></td></tr></table></figure>
-###### 2.2.3 触摸点坐标
-View和ViewGroup触摸2021年4月7日11:25:01最终都由`onTouchEvent(MotionEvent event)`来处理，MotionEvent提供了获取坐标点的方法。
-<br>
-方法说明：</li>
-<li><code>getX()</code> 获取触摸点距离控件左边的距离，也就是X轴视图坐标</li>
-<li><code>getY()</code> 获取触摸点距离控件顶部的距离，也就是Y轴视图坐标</li>
-<li><code>getRawX()</code> 获取触摸点距离屏幕左边的距离，也就是X轴绝对坐标</li>
-<li><code>getRawY()</code> 获取触摸点距离屏幕顶部的距离，也就是Y轴绝对坐标<br>
-示例代码：
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"> mTvView.setOnTouchListener((v, event) -&gt; &#123;</span><br><span class="line">            Log.d(TAG, <span class="string">&quot;View getX: &quot;</span> + event.getX());</span><br><span class="line">            Log.d(TAG, <span class="string">&quot;View getY: &quot;</span> + event.getY());</span><br><span class="line">            Log.d(TAG, <span class="string">&quot;View getRawX: &quot;</span> + event.getRawX());</span><br><span class="line">            Log.d(TAG, <span class="string">&quot;View getRawY: &quot;</span> + event.getRawY());</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">        &#125;);</span><br><span class="line"><span class="comment">//打印结果</span></span><br><span class="line"><span class="number">2021</span>-<span class="number">04</span>-<span class="number">07</span> <span class="number">11</span>:<span class="number">29</span>:<span class="number">01.167</span> <span class="number">30821</span>-<span class="number">30821</span>/com.exciter.view D/View01Activity: View getX: <span class="number">320.0</span></span><br><span class="line"><span class="number">2021</span>-<span class="number">04</span>-<span class="number">07</span> <span class="number">11</span>:<span class="number">29</span>:<span class="number">01.167</span> <span class="number">30821</span>-<span class="number">30821</span>/com.exciter.view D/View01Activity: View getY: <span class="number">336.0</span></span><br><span class="line"><span class="number">2021</span>-<span class="number">04</span>-<span class="number">07</span> <span class="number">11</span>:<span class="number">29</span>:<span class="number">01.167</span> <span class="number">30821</span>-<span class="number">30821</span>/com.exciter.view D/View01Activity: View getRawX: <span class="number">515.0</span></span><br><span class="line"><span class="number">2021</span>-<span class="number">04</span>-<span class="number">07</span> <span class="number">11</span>:<span class="number">29</span>:<span class="number">01.167</span> <span class="number">30821</span>-<span class="number">30821</span>/com.exciter.view D/View01Activity: View getRawY: <span class="number">915.0</span></span><br></pre></td></tr></table></figure></li>
-</ul>
-
+          <p>View坐标系的基础知识。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/04/07/AndroidView01/">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
