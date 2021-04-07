@@ -20,12 +20,12 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="1、新建SpringBoot项目1.1 选择Spring Initializr 1.2 修改项目配置信息 Group(项目名)：一般为公司或个人域名； Artifcat(工程名)：根据业务起名即可； Java：目前用的还是Java8，也可选择其他版本；其他信息自己配置即可。   1.3 选择Spring Web 1.4 输入Module或Project名 2、运行项目项目建成后，如下图所示： 点击">
+  <meta name="description" content="快速搭建一个简单的获取版本号的接口。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="SpringBootLearn01">
 <meta property="og:url" content="http://example.com/2021/03/21/SpringBootLearn01/index.html">
 <meta property="og:site_name" content="Exciter">
-<meta property="og:description" content="1、新建SpringBoot项目1.1 选择Spring Initializr 1.2 修改项目配置信息 Group(项目名)：一般为公司或个人域名； Artifcat(工程名)：根据业务起名即可； Java：目前用的还是Java8，也可选择其他版本；其他信息自己配置即可。   1.3 选择Spring Web 1.4 输入Module或Project名 2、运行项目项目建成后，如下图所示： 点击">
+<meta property="og:description" content="快速搭建一个简单的获取版本号的接口。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/2021/03/21/SpringBootLearn01/2021032101.png">
 <meta property="og:image" content="http://example.com/2021/03/21/SpringBootLearn01/2021032102.png">
@@ -35,8 +35,10 @@
 <meta property="og:image" content="http://example.com/2021/03/21/SpringBootLearn01/2021032106.png">
 <meta property="og:image" content="http://example.com/2021/03/21/SpringBootLearn01/2021032107.png">
 <meta property="article:published_time" content="2021-03-21T12:44:58.000Z">
-<meta property="article:modified_time" content="2021-04-07T02:43:45.084Z">
+<meta property="article:modified_time" content="2021-04-07T03:47:03.203Z">
 <meta property="article:author" content="Exciter">
+<meta property="article:tag" content="SpringBoot">
+<meta property="article:tag" content="Web">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/2021/03/21/SpringBootLearn01/2021032101.png">
 
@@ -213,8 +215,17 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-04-07 10:43:45" itemprop="dateModified" datetime="2021-04-07T10:43:45+08:00">2021-04-07</time>
+                <time title="修改时间：2021-04-07 11:47:03" itemprop="dateModified" datetime="2021-04-07T11:47:03+08:00">2021-04-07</time>
               </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/SpringLearn/" itemprop="url" rel="index"><span itemprop="name">SpringLearn</span></a>
+                </span>
+            </span>
 
           
             <span id="/2021/03/21/SpringBootLearn01/" class="post-meta-item leancloud_visitors" data-flag-title="SpringBootLearn01" title="阅读次数">
@@ -238,6 +249,7 @@
   </span>
   
   
+            <div class="post-description">快速搭建一个简单的获取版本号的接口。</div>
 
         </div>
       </header>
@@ -278,6 +290,10 @@
     
 
       <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/SpringBoot/" rel="tag"># SpringBoot</a>
+              <a href="/tags/Web/" rel="tag"># Web</a>
+          </div>
 
         
 
@@ -374,13 +390,13 @@
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">8</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>

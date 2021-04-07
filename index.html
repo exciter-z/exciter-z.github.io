@@ -195,7 +195,16 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2021-04-07 10:51:03 / 修改时间：11:32:12" itemprop="dateCreated datePublished" datetime="2021-04-07T10:51:03+08:00">2021-04-07</time>
+              <time title="创建时间：2021-04-07 10:51:03 / 修改时间：11:47:40" itemprop="dateCreated datePublished" datetime="2021-04-07T10:51:03+08:00">2021-04-07</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/AndroidView/" itemprop="url" rel="index"><span itemprop="name">AndroidView</span></a>
+                </span>
             </span>
 
           
@@ -302,8 +311,17 @@ View和ViewGroup触摸2021年4月7日11:25:01最终都由`onTouchEvent(MotionEve
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-04-07 10:43:45" itemprop="dateModified" datetime="2021-04-07T10:43:45+08:00">2021-04-07</time>
+                <time title="修改时间：2021-04-07 11:47:03" itemprop="dateModified" datetime="2021-04-07T11:47:03+08:00">2021-04-07</time>
               </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/SpringLearn/" itemprop="url" rel="index"><span itemprop="name">SpringLearn</span></a>
+                </span>
+            </span>
 
           
             <span id="/2021/03/21/SpringBootLearn01/" class="post-meta-item leancloud_visitors" data-flag-title="SpringBootLearn01" title="阅读次数">
@@ -337,29 +355,15 @@ View和ViewGroup触摸2021年4月7日11:25:01最终都由`onTouchEvent(MotionEve
     <div class="post-body" itemprop="articleBody">
 
       
-          <h3 id="1、新建SpringBoot项目"><a href="#1、新建SpringBoot项目" class="headerlink" title="1、新建SpringBoot项目"></a>1、新建<code>SpringBoot</code>项目</h3><h4 id="1-1-选择Spring-Initializr"><a href="#1-1-选择Spring-Initializr" class="headerlink" title="1.1 选择Spring Initializr"></a>1.1 选择<code>Spring Initializr</code></h4><p><img src="/2021/03/21/SpringBootLearn01/2021032101.png" alt="2021032101"></p>
-<h4 id="1-2-修改项目配置信息"><a href="#1-2-修改项目配置信息" class="headerlink" title="1.2 修改项目配置信息"></a>1.2 修改项目配置信息</h4><ul>
-<li><code>Group</code>(项目名)：一般为公司或个人域名；</li>
-<li><code>Artifcat</code>(工程名)：根据业务起名即可；</li>
-<li><code>Java</code>：目前用的还是<code>Java8</code>，也可选择其他版本；<br>其他信息自己配置即可。</li>
-</ul>
-<p><img src="/2021/03/21/SpringBootLearn01/2021032102.png" alt="2021032102"></p>
-<h4 id="1-3-选择Spring-Web"><a href="#1-3-选择Spring-Web" class="headerlink" title="1.3 选择Spring Web"></a>1.3 选择<code>Spring Web</code></h4><p><img src="/2021/03/21/SpringBootLearn01/2021032103.png" alt="2021032103"></p>
-<h4 id="1-4-输入Module或Project名"><a href="#1-4-输入Module或Project名" class="headerlink" title="1.4 输入Module或Project名"></a>1.4 输入<code>Module</code>或<code>Project</code>名</h4><p><img src="/2021/03/21/SpringBootLearn01/2021032104.png" alt="2021032104"></p>
-<h3 id="2、运行项目"><a href="#2、运行项目" class="headerlink" title="2、运行项目"></a>2、运行项目</h3><p>项目建成后，如下图所示：</p>
-<p><img src="/2021/03/21/SpringBootLearn01/2021032105.png" alt="2021032105"><br>点击顶部工具栏的三角(Run)按钮，项目即可跑起来，可以在控制台看到如下信息，表示项目已经启动成功：</p>
-<p><img src="/2021/03/21/SpringBootLearn01/2021032106.png" alt="2021032106"></p>
-<h3 id="3、项目解析"><a href="#3、项目解析" class="headerlink" title="3、项目解析"></a>3、项目解析</h3><h4 id="3-1-pom-xml-项目版本以及依赖管理"><a href="#3-1-pom-xml-项目版本以及依赖管理" class="headerlink" title="3.1 pom.xml 项目版本以及依赖管理"></a>3.1 <code>pom.xml</code> 项目版本以及依赖管理</h4><p>以下配置信息就是上边新建项目时候的配置信息：</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">project</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://maven.apache.org/POM/4.0.0&quot;</span> <span class="attr">xmlns:xsi</span>=<span class="string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span></span></span><br><span class="line"><span class="tag">         <span class="attr">xsi:schemaLocation</span>=<span class="string">&quot;http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd&quot;</span>&gt;</span></span><br><span class="line">    ......</span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.exciter<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>demo<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>0.0.1-SNAPSHOT<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">name</span>&gt;</span>demo<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">description</span>&gt;</span>Demo project for Spring Boot<span class="tag">&lt;/<span class="name">description</span>&gt;</span></span><br><span class="line">    ......</span><br><span class="line"><span class="tag">&lt;/<span class="name">project</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><code>dependencies</code>标签下的为项目依赖：</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">project</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://maven.apache.org/POM/4.0.0&quot;</span> <span class="attr">xmlns:xsi</span>=<span class="string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span></span></span><br><span class="line"><span class="tag">         <span class="attr">xsi:schemaLocation</span>=<span class="string">&quot;http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd&quot;</span>&gt;</span></span><br><span class="line">    ......</span><br><span class="line">     <span class="tag">&lt;<span class="name">dependencies</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-web<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-test<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">scope</span>&gt;</span>test<span class="tag">&lt;/<span class="name">scope</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">dependencies</span>&gt;</span></span><br><span class="line">    ......</span><br><span class="line"><span class="tag">&lt;/<span class="name">project</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h4 id="3-2-Application类"><a href="#3-2-Application类" class="headerlink" title="3.2 Application类"></a>3.2 <code>Application</code>类</h4><p><code>DemoApplication</code>类是项目的启动类，相当于<code>Android</code>的<code>Application</code>：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.exciter.demo;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> org.springframework.boot.SpringApplication;</span><br><span class="line"><span class="keyword">import</span> org.springframework.boot.autoconfigure.SpringBootApplication;</span><br><span class="line"></span><br><span class="line"><span class="meta">@SpringBootApplication</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DemoApplication</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        SpringApplication.run(DemoApplication.class, args);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="4、写第一个Rest接口"><a href="#4、写第一个Rest接口" class="headerlink" title="4、写第一个Rest接口"></a>4、写第一个<code>Rest</code>接口</h3><h4 id="4-1-在com-exciter-demo下新建controller包，然后新建DemoController类，并运行项目："><a href="#4-1-在com-exciter-demo下新建controller包，然后新建DemoController类，并运行项目：" class="headerlink" title="4.1 在com.exciter.demo下新建controller包，然后新建DemoController类，并运行项目："></a>4.1 在<code>com.exciter.demo</code>下新建c<code>ontroller</code>包，然后新建<code>DemoController</code>类，并运行项目：</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.exciter.demo.controller;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> org.springframework.web.bind.annotation.GetMapping;</span><br><span class="line"><span class="keyword">import</span> org.springframework.web.bind.annotation.RequestMapping;</span><br><span class="line"><span class="keyword">import</span> org.springframework.web.bind.annotation.RestController;</span><br><span class="line"></span><br><span class="line"><span class="meta">@RestController</span></span><br><span class="line"><span class="meta">@RequestMapping(&quot;/api&quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DemoController</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@GetMapping(&quot;/getVersion&quot;)</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">getVersion</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;&#123;\n&quot;</span> +</span><br><span class="line">                <span class="string">&quot;    \&quot;VersionName\&quot;:\&quot;V1.0.1\&quot;,\n&quot;</span> +</span><br><span class="line">                <span class="string">&quot;    \&quot;VersionCode\&quot;:101\n&quot;</span> +</span><br><span class="line">                <span class="string">&quot;&#125;&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="4-2-在浏览器中输入接口地址并访问："><a href="#4-2-在浏览器中输入接口地址并访问：" class="headerlink" title="4.2 在浏览器中输入接口地址并访问："></a>4.2 在浏览器中输入接口地址并访问：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http:&#x2F;&#x2F;localhost:8080&#x2F;api&#x2F;getVersion</span><br></pre></td></tr></table></figure>
-<p>请求结果如下，第一个简单的获取版本号的接口就写好了：</p>
-<p><img src="/2021/03/21/SpringBootLearn01/2021032107.png" alt="2021032107"></p>
-
+          <p>快速搭建一个简单的获取版本号的接口。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/03/21/SpringBootLearn01/">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -539,13 +543,13 @@ View和ViewGroup触摸2021年4月7日11:25:01最终都由`onTouchEvent(MotionEve
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">8</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
